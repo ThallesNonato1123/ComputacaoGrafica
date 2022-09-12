@@ -12,14 +12,15 @@
     padding: 20px
 }
 
-ul{
-    list-style-type: none;
+.pages{
     display:flex;
     flex-direction: row;
 }
 
-li{
+.page{
     margin-right: 50px;
 }
 
-
+ul{
+    list-style-type: none;
+}
