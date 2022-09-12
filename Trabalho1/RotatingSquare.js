@@ -1,5 +1,5 @@
 let currentRotation = 'topLeft';
-let direction = 'right';
+let direction = 'left';
 let didDraw = false;
 
 document.addEventListener('keydown', ({ key }) => {
@@ -36,7 +36,7 @@ const draw = () => {
     if(!didDraw){
         ctx.restore()
         currentRotation = 'topLeft'
-        direction = 'right'
+        direction = 'left'
     }
     
     ctx.clearRect(0, 0, 500, 500);
@@ -81,6 +81,6 @@ window.requestAnimationFrame(draw);
 
 function resetPosition(){
     didDraw = false
-    direction = 'right'
+    direction = 'left'
     currentRotation = 'topLeft'
 }
