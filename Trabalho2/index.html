@@ -1,12 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trabalho 2</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 1200px;
+
+            margin: 20px 0;
+        }
+
+        .container span {
+            font-size: 1.5rem;
+            margin: 0 auto;
+        }
+    </style>
 </head>
+
 <body>
-    <p>Ney</p>
+    <div id="header">
+        <ul class="pages">
+            <li class="page"> <a href="../Trabalho1/index.html">Trabalho 1</a></li>
+            <li class="page"> <a href="../Trabalho2/index.html">Trabalho 2</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <span>Retângulo x Retângulo</span>
+        <canvas id="rectXrect" width=1200 height=800 style="border:1px solid gray"></canvas>
+    </div>
+
+    <div class="container">
+        <span>Triangulo x Triangulo</span>
+        <canvas id="triXtri" width=1200 height=800 style="border:1px solid gray"></canvas>
+    </div>
+
+    <div class="container">
+        <span>Retângulo x Triangulo x Círculo</span>
+        <canvas id="allInOne" width=1200 height=800 style="border:1px solid gray"></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/3.4.2/gl-matrix-min.min.js"></script>
+
+    <script src="./js/init.js"></script>
+    <script src="./js/utils/2dUtils.js"></script>
+    <script src="./js/utils/canvas.js"></script>
+    <script src="./js/utils/rect.js"></script>
+    <script src="./js/utils/tri.js"></script>
+    <script src="./js/utils/circle.js"></script>
+    <script src="./js/models/Rectangles.js"></script>
+    <script src="./js/models/Triangles.js"></script>
+    <script src="./js/models/Circles.js"></script>
+    <script src="./js/rectXrect.js"></script>
+    <script src="./js/triXtri.js"></script>
+    <script src="./js/circleXrectXtri.js"></script>
 </body>
+
 </html>
