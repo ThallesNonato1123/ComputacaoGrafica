@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 3</title>
+    <link rel="stylesheet" type="text/css" href="/ComputacaoGrafica/styles.css">
+    <style>
+        .instructions {
+            position: absolute;
+            top: 100px;
+            left: 20px;
+
+            padding: 20px;
+
+            border: 1px solid black;
+
+            z-index: 2;
+        }
+
+        .instructions ul {
+            margin-bottom: 20px;
+        }
+
+        .instructions ul:last-child {
+            margin-bottom: 0px;
+        }
+
+        .instructions li {
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <ul class="pages">
+            <li class="page"> <a href="/ComputacaoGrafica/Trabalho1/index.html">Trabalho 1</a></li>
+            <li class="page"> <a href="/ComputacaoGrafica/Trabalho2/index.html">Trabalho 2</a></li>
+            <li class="page"> <a href="/ComputacaoGrafica/Trabalho3/index.html">Trabalho 3</a></li>
+        </ul>
+    </div>
+
+    <div class="instructions">
+        <ul>
+            <li>
+                w: head
+            </li>
+        </ul>
+        <ul>
+            <li>
+                e: right arm
+            </li>
+            <li>
+                d: right forearm
+            </li>
+            <li>
+                c: right hand
+            </li>
+            <li>
+                q: left arm
+            </li>
+            <li>
+                a: left forearm
+            </li>
+            <li>
+                z: left hand
+            </li>
+        </ul>
+        <ul>
+            <li>
+                E: right calf
+            </li>
+            <li>
+                D: right leg
+            </li>
+            <li>
+                C: right foot
+            </li>
+            <li>
+                Q: left calf
+            </li>
+            <li>
+                A: left leg
+            </li>
+            <li>
+                Z: left foot
+            </li>
+
+        </ul>
+    </div>
+
+    <script src="https://colorjs.io/dist/color.global.js"></script>
+    <script src="./js/libs/three.js"></script>
+    <script src="./js/config/scene.js"></script>
+    <script src="./js/constants/colors.js"></script>
+    <script src="./js/models/Robot.js"></script>
+    <script src="./js/handlers/keyHandlers.js"></script>
+    <script src="./js/handlers/mouseHandlers.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+
+</html>
